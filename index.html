@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ikono: Feel the Calm</title>
+    <meta name="description" content="Stop Trying to Meditate. Start Feeling Calm with Slow Art." />
+    
+    <!-- Import Chillax Font -->
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@200,300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Chillax', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    
+    <style>
+      /* Custom scrollbar for a premium feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0A1F44; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #334155; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#0A1F44] text-slate-100 antialiased font-sans">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
