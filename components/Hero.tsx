@@ -110,12 +110,12 @@ const Hero: React.FC = () => {
 
         {/* Right Column: Dual Phone Display */}
         <div className="flex-1 w-full flex justify-center lg:justify-end mt-8 lg:mt-0">
-          <div className="relative" style={{ width: '480px', height: '520px' }}>
+          <div className="relative" style={{ width: '720px', height: '780px' }}>
 
             {/* LANDSCAPE PHONE (behind, larger — the meditation experience) */}
             <div
               className="absolute group cursor-pointer"
-              style={{ top: '0', right: '0', width: '420px', height: '260px' }}
+              style={{ top: '0', right: '0', width: '630px', height: '390px' }}
             >
               <div className="relative w-full h-full bg-[#0A1F44] rounded-[1.5rem] border-[6px] border-slate-800 shadow-2xl shadow-black/50 overflow-hidden ring-1 ring-white/10 hover:scale-[1.01] transition-transform duration-500">
                 {/* Landscape slideshow */}
@@ -149,7 +149,7 @@ const Hero: React.FC = () => {
             {/* PORTRAIT PHONE (in front, smaller — the browse/discover mode) */}
             <div
               className="absolute group cursor-pointer z-10"
-              style={{ bottom: '0', left: '0', width: '200px', height: '400px' }}
+              style={{ bottom: '0', left: '0', width: '300px', height: '600px' }}
             >
               <div className="relative w-full h-full bg-[#0A1F44] rounded-[2rem] border-[6px] border-slate-800 shadow-2xl shadow-black/60 overflow-hidden ring-1 ring-white/10 hover:scale-[1.01] transition-transform duration-500">
                 {/* Dynamic Island */}
