@@ -63,14 +63,14 @@ const Hero: React.FC = () => {
           {/* CTA Area */}
           <div className="w-full max-w-lg flex flex-col items-center lg:items-start">
              <p className="text-sm text-slate-400 uppercase tracking-widest mb-4 font-semibold">
-              🚀 Get Early Access Now
+              Get Early Access Now
             </p>
-            
-            <a 
+
+            <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSfgG_BwD4yemBWcypp-5hOxbBh2z-ZNBpa7HEr5KRpJ7Qu5Mg/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2 text-sm bg-[#FF23A5] hover:opacity-90 text-white font-bold rounded-xl shadow-lg shadow-pink-900/20 transition-all transform hover:scale-[1.02] whitespace-nowrap inline-block text-center"
+              className="px-6 py-2 text-sm text-pink-400 font-bold rounded-xl border-2 border-pink-500 hover:bg-pink-500/10 transition-all transform hover:scale-[1.02] whitespace-nowrap inline-block text-center"
             >
               Join Now
             </a>

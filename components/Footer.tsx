@@ -17,9 +17,9 @@ const Footer: React.FC = () => {
             <span>© {new Date().getFullYear()} Markevitch Media GmbH All rights reserved.</span>
           </div>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-slate-300 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-slate-300 transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-slate-300 transition-colors">Contact</a>
+            <a href="https://ikonotv.art/page/2/privacy-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">Privacy Policy</a>
+            <a href="https://ikonotv.art/page/3/terms-and-conditions/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">Terms of Service</a>
+            <a href="mailto:info@ikonoworld.art" className="hover:text-slate-300 transition-colors">Contact</a>
           </div>
         </div>
       </div>

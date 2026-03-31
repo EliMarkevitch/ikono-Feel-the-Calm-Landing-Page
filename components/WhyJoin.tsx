@@ -58,11 +58,11 @@ const WhyJoin: React.FC = () => {
                   No noise. No pressure. Just calm.
                 </p>
                 <div className="w-full">
-                    <a 
+                    <a
                       href="https://docs.google.com/forms/d/e/1FAIpQLSfgG_BwD4yemBWcypp-5hOxbBh2z-ZNBpa7HEr5KRpJ7Qu5Mg/viewform"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block px-6 py-2 text-sm bg-[#FF23A5] hover:opacity-90 text-white font-bold rounded-xl shadow-lg shadow-pink-900/20 transition-all transform hover:scale-[1.02] whitespace-nowrap"
+                      className="inline-block px-6 py-2 text-sm text-pink-400 font-bold rounded-xl border-2 border-pink-500 hover:bg-pink-500/10 transition-all transform hover:scale-[1.02] whitespace-nowrap"
                     >
                       Join List
                     </a>
