@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 
-type AnswerCategory = 'nature' | 'abstract' | 'classical' | 'rhythm';
+type AnswerCategory = 'nature' | 'water' | 'moonlight' | 'tenderness' | 'reflection' | 'masterpieces';
 
 interface Question {
   question: string;
@@ -12,37 +12,45 @@ const questions: Question[] = [
   {
     question: "When you need to relax, you're drawn to...",
     answers: [
-      { label: "\u{1F33F} Nature & landscapes", category: 'nature' },
-      { label: "\u{1F3A8} Abstract colors & shapes", category: 'abstract' },
-      { label: "\u{1F3DB}\uFE0F Classical masterpieces", category: 'classical' },
-      { label: "\u{1F30A} Water & movement", category: 'rhythm' },
+      { label: "Forests, fields, and open skies", category: 'nature' },
+      { label: "Oceans, rivers, and rain", category: 'water' },
+      { label: "Starlit skies and quiet darkness", category: 'moonlight' },
+      { label: "Warmth, closeness, and gentle beauty", category: 'tenderness' },
+      { label: "Stillness and silence", category: 'reflection' },
+      { label: "Timeless paintings by the great masters", category: 'masterpieces' },
     ],
   },
   {
     question: "Your ideal calm moment is...",
     answers: [
-      { label: "Morning stillness before the day begins", category: 'nature' },
-      { label: "A slow evening wind-down", category: 'classical' },
-      { label: "A midday mental reset", category: 'abstract' },
-      { label: "Whenever I can steal 2 minutes", category: 'rhythm' },
+      { label: "Walking through a garden at dawn", category: 'nature' },
+      { label: "Listening to waves or flowing water", category: 'water' },
+      { label: "Sitting quietly under the night sky", category: 'moonlight' },
+      { label: "A warm embrace or a gentle melody", category: 'tenderness' },
+      { label: "A pause — just breathing, just being", category: 'reflection' },
+      { label: "Standing in front of a painting that moves you", category: 'masterpieces' },
     ],
   },
   {
     question: "What feeling do you crave most?",
     answers: [
-      { label: "Deep peace & grounding", category: 'nature' },
-      { label: "Creative inspiration", category: 'abstract' },
-      { label: "Emotional release", category: 'classical' },
-      { label: "Mental clarity & focus", category: 'rhythm' },
+      { label: "Grounding and connection to the earth", category: 'nature' },
+      { label: "Flow and letting go", category: 'water' },
+      { label: "Mystery and wonder", category: 'moonlight' },
+      { label: "Softness and emotional warmth", category: 'tenderness' },
+      { label: "Clarity and inner stillness", category: 'reflection' },
+      { label: "Awe and timeless beauty", category: 'masterpieces' },
     ],
   },
   {
     question: "Your ideal screen experience...",
     answers: [
-      { label: "Slowly changing scenes", category: 'nature' },
-      { label: "Rich, vivid colors", category: 'abstract' },
-      { label: "Gentle, minimal movement", category: 'classical' },
-      { label: "Dramatic light & shadow", category: 'rhythm' },
+      { label: "Slowly changing landscapes and trees", category: 'nature' },
+      { label: "Gentle ripples, tides, and flowing motion", category: 'water' },
+      { label: "Deep shadows, soft glows, and moonlit scenes", category: 'moonlight' },
+      { label: "Intimate close-ups with warm, soft light", category: 'tenderness' },
+      { label: "Minimal movement, maximum presence", category: 'reflection' },
+      { label: "Slow journeys through iconic artworks", category: 'masterpieces' },
     ],
   },
 ];
@@ -56,23 +64,33 @@ interface Result {
 const results: Record<AnswerCategory, Result> = {
   nature: {
     title: "Nature Soul",
-    description: "Your calm lives in forests, seas, and open skies.",
-    theme: "Nature Contemplation",
+    description: "Your calm lives in forests, meadows, and open skies. The earth grounds you.",
+    theme: "Nature",
   },
-  abstract: {
-    title: "Abstract Dreamer",
-    description: "Your mind finds freedom in color and form.",
-    theme: "Abstract Flow",
+  water: {
+    title: "Water Spirit",
+    description: "You find peace in the rhythm of waves, the flow of rivers, the sound of rain.",
+    theme: "Water",
   },
-  classical: {
-    title: "Classical Spirit",
-    description: "You connect with timeless beauty.",
-    theme: "Masterpiece Meditation",
+  moonlight: {
+    title: "Moonlight Dreamer",
+    description: "The quiet of the night sky speaks to you. Mystery and stillness are your refuge.",
+    theme: "Moonlight",
   },
-  rhythm: {
-    title: "Rhythm Seeker",
-    description: "You find peace in gentle motion.",
-    theme: "Moving Stillness",
+  tenderness: {
+    title: "Gentle Heart",
+    description: "You seek warmth, softness, and beauty that touches the soul.",
+    theme: "Tenderness",
+  },
+  reflection: {
+    title: "Still Mirror",
+    description: "You crave pause. In silence and stillness, you find yourself.",
+    theme: "Reflection",
+  },
+  masterpieces: {
+    title: "Art Devotee",
+    description: "Timeless beauty moves you. Klimt, Vermeer, Monet — the masters calm your mind.",
+    theme: "Masterpieces",
   },
 };
 
@@ -95,9 +113,11 @@ const CalmQuiz: React.FC = () => {
   const getResult = (): Result => {
     const counts: Record<AnswerCategory, number> = {
       nature: 0,
-      abstract: 0,
-      classical: 0,
-      rhythm: 0,
+      water: 0,
+      moonlight: 0,
+      tenderness: 0,
+      reflection: 0,
+      masterpieces: 0,
     };
     answers.forEach((a) => {
       counts[a]++;
