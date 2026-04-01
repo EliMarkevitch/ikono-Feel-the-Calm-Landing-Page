@@ -87,23 +87,41 @@ const Hero: React.FC = () => {
             Experience 7 days of effortless calm through <span className="text-pink-400 font-medium">Slow Art</span> silent, contemplative videos scientifically shown to lower cortisol and place your mind into a meditative state.
           </p>
 
-          {/* CTA Area */}
+          {/* CTA Area — App Store Badges */}
           <div className="w-full max-w-lg flex flex-col items-center lg:items-start">
             <p className="text-sm text-slate-400 uppercase tracking-widest mb-4 font-semibold">
-              Get Early Access Now
+              Download Now
             </p>
 
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfgG_BwD4yemBWcypp-5hOxbBh2z-ZNBpa7HEr5KRpJ7Qu5Mg/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-2 text-sm text-pink-400 font-bold rounded-xl border-2 border-pink-500 hover:bg-pink-500/10 transition-all transform hover:scale-[1.02] whitespace-nowrap inline-block text-center"
-            >
-              Join Now
-            </a>
+            <div className="flex flex-wrap gap-4 items-center">
+              <a
+                href="#apple-store-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block hover:opacity-80 transition-opacity transform hover:scale-[1.02]"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/EliMarkevitch/images/main/APPLE_Badge_white.svg"
+                  alt="Download on the App Store"
+                  style={{ height: '48px', width: 'auto' }}
+                />
+              </a>
+              <a
+                href="#google-play-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block hover:opacity-80 transition-opacity transform hover:scale-[1.02]"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/EliMarkevitch/images/main/GooglePlay_Badge_Web_color_English%20(Black%20to%20White).png"
+                  alt="Get it on Google Play"
+                  style={{ height: '48px', width: 'auto' }}
+                />
+              </a>
+            </div>
 
             <p className="text-lg md:text-xl text-slate-300 mt-6 leading-relaxed">
-              Get full, free access to all themes for 7 days when the app launches.
+              Get full, free access to all themes for 7 days.
             </p>
           </div>
         </div>

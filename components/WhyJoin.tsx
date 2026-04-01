@@ -11,8 +11,7 @@ const WhyJoin: React.FC = () => {
           {/* Text Content */}
           <div className="lg:w-1/2 w-full">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
-              Why Join the <br />
-              <span className="text-pink-500">Waiting List?</span>
+              Why <span className="text-pink-500">Feel the Calm?</span>
             </h2>
             
             <div className="space-y-8">
@@ -57,14 +56,30 @@ const WhyJoin: React.FC = () => {
                 <p className="text-lg text-slate-300 mb-8 font-light">
                   No noise. No pressure. Just calm.
                 </p>
-                <div className="w-full">
+                <div className="w-full flex flex-wrap gap-4">
                     <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSfgG_BwD4yemBWcypp-5hOxbBh2z-ZNBpa7HEr5KRpJ7Qu5Mg/viewform"
+                      href="#apple-store-link"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block px-6 py-2 text-sm text-pink-400 font-bold rounded-xl border-2 border-pink-500 hover:bg-pink-500/10 transition-all transform hover:scale-[1.02] whitespace-nowrap"
+                      className="inline-block hover:opacity-80 transition-opacity transform hover:scale-[1.02]"
                     >
-                      Join List
+                      <img
+                        src="https://raw.githubusercontent.com/EliMarkevitch/images/main/APPLE_Badge_white.svg"
+                        alt="Download on the App Store"
+                        style={{ height: '44px', width: 'auto' }}
+                      />
+                    </a>
+                    <a
+                      href="#google-play-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block hover:opacity-80 transition-opacity transform hover:scale-[1.02]"
+                    >
+                      <img
+                        src="https://raw.githubusercontent.com/EliMarkevitch/images/main/GooglePlay_Badge_Web_color_English%20(Black%20to%20White).png"
+                        alt="Get it on Google Play"
+                        style={{ height: '44px', width: 'auto' }}
+                      />
                     </a>
                 </div>
              </div>

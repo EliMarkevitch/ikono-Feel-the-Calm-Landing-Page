@@ -202,14 +202,32 @@ const CalmQuiz: React.FC = () => {
                 </p>
               </div>
 
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfgG_BwD4yemBWcypp-5hOxbBh2z-ZNBpa7HEr5KRpJ7Qu5Mg/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-8 py-3 text-sm font-bold text-pink-400 rounded-full border-2 border-pink-500 hover:bg-pink-500/10 transition-all text-lg mb-4"
-              >
-                Join the Waiting List
-              </a>
+              <div className="flex flex-wrap gap-4 justify-center mb-4">
+                <a
+                  href="#apple-store-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block hover:opacity-80 transition-opacity transform hover:scale-[1.02]"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/EliMarkevitch/images/main/APPLE_Badge_white.svg"
+                    alt="Download on the App Store"
+                    style={{ height: '44px', width: 'auto' }}
+                  />
+                </a>
+                <a
+                  href="#google-play-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block hover:opacity-80 transition-opacity transform hover:scale-[1.02]"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/EliMarkevitch/images/main/GooglePlay_Badge_Web_color_English%20(Black%20to%20White).png"
+                    alt="Get it on Google Play"
+                    style={{ height: '44px', width: 'auto' }}
+                  />
+                </a>
+              </div>
 
               <div>
                 <button
