@@ -41,13 +41,8 @@ const Navbar: React.FC = () => {
           ))}
         </div>
 
-        {/* Right: Get In Touch (desktop) */}
-        <a
-          href="mailto:info@ikonoworld.art"
-          className="hidden md:inline-block px-5 py-1.5 text-sm font-medium text-pink-400 rounded-full border border-pink-500/40 hover:bg-pink-500/10 transition-all"
-        >
-          Get In Touch
-        </a>
+        {/* Right: spacer for layout balance */}
+        <div className="hidden md:block w-[120px]"></div>
 
         {/* Mobile: Hamburger */}
         <button
@@ -76,13 +71,6 @@ const Navbar: React.FC = () => {
               {item.label}
             </a>
           ))}
-          <a
-            href="mailto:info@ikonoworld.art"
-            onClick={() => setMobileOpen(false)}
-            className="block px-4 py-2.5 rounded-xl text-sm font-medium text-pink-400 border border-pink-500/40 hover:bg-pink-500/10 transition-all text-center mt-4"
-          >
-            Get In Touch
-          </a>
         </div>
       )}
     </nav>
