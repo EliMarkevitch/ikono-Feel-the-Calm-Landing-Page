@@ -151,7 +151,7 @@ const CalmQuiz: React.FC = () => {
         </div>
 
         {/* Quiz panel */}
-        <div className="bg-slate-900/40 border border-white/10 rounded-2xl p-8 md:p-10">
+        <div className="bg-slate-900/40 border border-pink-500/30 rounded-2xl p-8 md:p-10">
           {/* Progress bar */}
           <div className="mb-8">
             <div className="flex justify-between text-sm text-slate-400 mb-2">
